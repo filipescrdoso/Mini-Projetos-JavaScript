@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-white: #f4f4f4;
+    --color-lightGray: #d9d9d9;
+    --color-darkGray: #252525;
+    --color-red: #9e0101;
+    --color-contrast: #000000;
+    --color-contrast2: #ffffff;
+    --settings-bg: rgba(0, 0, 0, .5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+}
+
+.container {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+}
+
+.container h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+.container h2 {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.container h3 {
+    font-weight: 400;
+    font-size: 1em;
+    margin: -3px 5px 20px 5px;
+}
+
+
+li {
+    list-style: none;
+    font-size: 13px;
+}
+
+button {
+    color: #ffffff;
+    background-color: royalblue;
+    border: none;
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: scale, box-shadow .2s ease-out;
+}
+
+button:hover {
+    scale: 1.02;
+}
