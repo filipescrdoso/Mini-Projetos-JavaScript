@@ -26,7 +26,7 @@
             height: 53px;
             color: #000;
             background: none;
-            font-size: 1.1em;
+            font-size: 0.9em;
             font-weight: 500;
             border-radius: 4px;
             letter-spacing: 1.4px;
@@ -38,6 +38,9 @@
             top: 16px;
             cursor: pointer;
             color: #7a7a7a;
+        }
+        .input-div span:hover {
+            transform: scale(1.1);
         }
         .slider-details {
             display: flex;
@@ -83,8 +86,8 @@
 
         <div class="inner-container">
             <div class="input-div">
-                <input type="text" disabled>
-                <span class="material-symbols-rounded">copy_all</span>
+                <input type="text" disabled placeholder="Selecione uma das opções">
+                <span class="material-symbols-rounded" id="copy">copy_all</span>
             </div>
             <span class="safety-bar"></span>
 
@@ -95,7 +98,7 @@
                     <label class="text">Número de caracteres da senha:</label>
                     <span>0</span>
                 </div>
-                <input type="range" name="pass-slider" id="pass-slider" min="1" max="40" value="30" step="1">
+                <input type="range" name="pass-slider" id="pass-slider" min="1" max="30" step="1">
 
                 <div class="options-div">
                     <ul class="options">
